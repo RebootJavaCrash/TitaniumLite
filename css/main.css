@@ -10,9 +10,9 @@ body:before {
 
 /* USE THIS TO CHANGE COLOR SCHEME*/
 :root {
-    --main-color:darkorange;
+    --main-color:rgba(23,28,42,0.7);
     --secondary-color:black;
-    --hovercolor:orange;
+    --hovercolor:rgba(26,28,46,0.7);
     --textcolor:white;
     --borders:white;
   }
