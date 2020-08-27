@@ -6,28 +6,6 @@
     <link href="./css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link id="favicon" rel="icon" href="img/favicon.gif?v3"/>
-Then set the path of the new favicon in a JavaScript variable.
-
-<script>
-var iconNew = 'img/favicon-dot.gif';
-As with the first approach, we will also create two functions:
-
-
-function changeFavicon() {
-    document.getElementById('favicon').href = iconNew;
-}
-function newUpdate() {
-    update = setInterval(changeFavicon, 3000);
-    setTimeout(function() { 
-        clearInterval( update ); 
-    }, 3100);
-}
- 
-var docBody = document.getElementById('site-body');
-docBody.onload = newUpdate;
-</script>
   </head>
   <body>
     <header><div class="navbar" id="mynavbar">
