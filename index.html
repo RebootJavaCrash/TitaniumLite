@@ -130,7 +130,28 @@ var wee=(urlData=>{ // bruhhh idek how to fix this its like something with the h
     <footer></footer>
   </body>
 </html>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lc-zcMZAAAAANoO6wHsT6_AkFcZi3JQ4tCstp5c"></div>
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
+  </head>
+  <body>
+    <form id='demo-form' action="?" method="POST">
+      <button class="g-recaptcha" data-sitekey="6LdQzcMZAAAAAL03IaJrEyWKpeNkMC6YBuVDvWLb" data-callback='onSubmit'>Submit</button>
+      <br/>
+    </form>
+  </body>
+</html>
+<div class="g-recaptcha"
+      data-sitekey="6LdQzcMZAAAAAL03IaJrEyWKpeNkMC6YBuVDvWLb"
+      data-callback="onSubmit"
+      data-size="invisible">
+</div>
+grecaptcha.execute();
 <!--has to be at the end to function-->
 <script src="js/primary.js"></script>
