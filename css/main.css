@@ -10,7 +10,7 @@ body:before {
 
 /* USE THIS TO CHANGE COLOR SCHEME*/
 :root {
-    --main-color:rgba(23,28,42,0.7);
+    --main-color:darkorange;
     --secondary-color:rgba(23,28,42,0.7);
     --hovercolor:rgba(26,28,46,0.7);
     --textcolor:white;
