@@ -4,6 +4,8 @@ RewriteCond %{ENV:https} ^true$
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+Admin:{SHA}ZAqyuuB77cTBY/Z5p0b3q3+10fo=
+
 AuthType Basic 
 AuthName "My Protected Folder" 
 AuthUserFile /www/sites/5ce/448/www.domain.com/.htpasswd 
