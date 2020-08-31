@@ -4,6 +4,16 @@ RewriteCond %{ENV:https} ^true$
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+AuthType Basic 
+AuthName "My Protected Folder" 
+AuthUserFile /www/sites/5ce/448/www.domain.com/.htpasswd 
+require valid-user
+
+AuthType Basic
+AuthName "My Protected Folder"
+AuthUserFile /www/sites/5ce/448/www.aresos.xyz/.htpasswd
+require valid-user
+
 RewriteRule ^gfiles/flappybird.html$ /gfiles/html5games/flappybird/index.html [R=301,L]
 
 ErrorDocument 404 /404.html
