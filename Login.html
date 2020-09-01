@@ -234,7 +234,18 @@ p {
 }
 
 </style>
+<script>
+var input = document.getElementById("login__password");
+var text = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
 
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
 <Center><h1 style="color:white;">Login</h1></center>
 <body class="align">
 
@@ -255,18 +266,7 @@ p {
       <div class="form__field">
         <input type="submit" value="Sign In">
       </div>
-<script>
-var input = document.getElementById("login__password");
-var text = document.getElementById("text");
-input.addEventListener("keyup", function(event) {
 
-if (event.getModifierState("CapsLock")) {
-    text.style.display = "block";
-  } else {
-    text.style.display = "none"
-  }
-});
-</script>
     </form>
 
     <p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
