@@ -38,7 +38,7 @@ elseif (isset($_POST['register'])) { //user registering
      <div id="login">
       <h1>Welcome Back!</h1>
 
-      <form action="loginpage.php" method="post" autocomplete="off">
+      <form action="{{ url_for("loginpage.php") }}" method="post">
 
         <div class="field-wrap">
         <label>
