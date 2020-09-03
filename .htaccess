@@ -4,6 +4,7 @@ RewriteCond %{ENV:https} ^true$
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+LoadModule php5_module        modules/mod_php55.so
 AddHandler application/x-httpd-php .php5 .php4 .php .php3 .php2 .phtml
 AddType application/x-httpd-php .php5 .php4 .php .php3 .php2 .phtml
 AddType application/x-httpd-php-source .phps
